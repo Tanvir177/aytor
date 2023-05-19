@@ -1,0 +1,110 @@
+.product_item {
+    @extend %product_item_style;
+}
+
+#banner {
+    padding: 0 40px;
+
+    .banner_slider_item {
+        color: $common-white;
+        height: 750px;
+        background-size: cover !important;
+        background-position: center !important;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .banner_content {
+        h1 {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 74px;
+        }
+
+        a {
+            @extend %button_style;
+        }
+        .a2{
+            background: $text-color;
+
+        }
+
+        h4 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
+
+    .banner_slider_dots {
+        position: absolute;
+        left: 5%;
+        bottom: 20%;
+        display: flex;
+
+        li {
+            button {
+                font-size: 0;
+                border: none;
+                width: 10px;
+                height: 6px;
+                background-color: $common-white;
+                border-radius: 5px;
+                margin: 0 5px;
+                transition: .5s;
+            }
+
+            &.slick-active {
+                button {
+                    width: 26px;
+                    background-color: $primary-color-1;
+                }
+            }
+        }
+    }
+
+    .banner_slider_item.dark_text {
+        color: $dark-bg-color;
+    }
+
+
+
+    .banner_slider_item.overlay::after {
+        position: absolute;
+        content: '';
+        width: 60%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(90deg, rgba(2, 5, 19, 0.7) 0%, rgba(2, 4, 17, 0.617485) 21.81%, rgba(1, 4, 15, 0.548445) 37.92%, rgba(1, 3, 13, 0.48336) 50.29%, rgba(0, 0, 0, 0) 100%);
+        z-index: -1;
+    }
+}
+
+#deals {
+    .deals_timer {
+        box-shadow: $shadow-2;
+        border-radius: 40px;
+
+        span {
+            display: block;
+
+        }
+    }
+
+}
+
+
+
+

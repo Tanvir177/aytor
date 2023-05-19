@@ -1,0 +1,65 @@
+#feature .container {
+    margin-top: 100px;
+
+}
+
+
+.feature_item {
+    position: relative;
+
+    a {
+        display: block;
+        margin-top: 20%;
+        margin-left: 30%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+        transition: .3s;
+
+        &:hover {
+            color: $primary-color-1;
+        }
+    }
+
+    .a3{
+        margin-top: 35%;
+        margin-left: 35%;
+    }
+}
+
+button {
+     margin-top: 3%;
+    margin-left: 40%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .3s;
+
+    &:hover{
+        color: $primary-color-1;
+    }
+}
+
+
+.feature_item .overlay2 {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 70%;
+    left: 16%;
+    top: 16%;
+    background: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.feature_item:hover .overlay2 {
+    visibility: visible;
+    opacity: 1;
+    width: 90%;
+    height: 85%;
+    left: 5%;
+    top: 7.5%;
+}

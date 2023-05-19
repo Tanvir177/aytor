@@ -1,0 +1,38 @@
+#offer_banner_1 {
+    background-image: url(../images/offer_banner_2_1.jpg);
+    // height: 524px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 100px;
+
+    .row {
+        padding: 100px 0;
+    }
+
+    h2 {
+        color: #fff;
+        text-align: left;
+        font-weight: 700;
+        font-size: 43px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: 'Roboto';
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    a {
+        @extend %button_style;
+        background: transparent;
+        border: 1px solid #fff;
+        &:hover{
+            background: $primary-color-1;
+            color: #fff;
+            border: 1px solid $primary-color-1;
+        }
+    }
+}
